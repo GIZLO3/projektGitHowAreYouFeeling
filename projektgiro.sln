@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34024.191
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "projektgiro.Android", "projektgiro\projektgiro.Android\projektgiro.Android.csproj", "{124C446E-1598-4511-BAEC-7755E4D23643}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "projektgiro", "projektgiro\projektgiro\projektgiro.csproj", "{0B91DE9C-BD23-4187-920B-EA46505652FB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{124C446E-1598-4511-BAEC-7755E4D23643}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{124C446E-1598-4511-BAEC-7755E4D23643}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{124C446E-1598-4511-BAEC-7755E4D23643}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{124C446E-1598-4511-BAEC-7755E4D23643}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{124C446E-1598-4511-BAEC-7755E4D23643}.Release|Any CPU.Build.0 = Release|Any CPU
+		{124C446E-1598-4511-BAEC-7755E4D23643}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{0B91DE9C-BD23-4187-920B-EA46505652FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B91DE9C-BD23-4187-920B-EA46505652FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B91DE9C-BD23-4187-920B-EA46505652FB}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{0B91DE9C-BD23-4187-920B-EA46505652FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B91DE9C-BD23-4187-920B-EA46505652FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B91DE9C-BD23-4187-920B-EA46505652FB}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8E137CF4-BBD9-4F06-B3A7-489A374CA5EE}
+	EndGlobalSection
+EndGlobal

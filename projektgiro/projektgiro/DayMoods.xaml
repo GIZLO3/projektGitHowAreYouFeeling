@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="projektgiro.DayMoods">
+    <ContentPage.Content>
+        <ScrollView>
+            <ListView x:Name="dayMoodsLists">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="{Binding Date, StringFormat='{0:MM/dd/yyyy}'}" FontSize="16" TextColor="Black"/>
+                                <Label FontSize="16" TextColor="Black" Text=" - "/>
+                                <Label Text="{Binding Mood}" FontSize="16" TextColor="Black"/>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
