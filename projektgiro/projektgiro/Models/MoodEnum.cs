@@ -2,10 +2,10 @@
 {
     public enum MoodEnum
     {
-        rad = 0,
-        good = 1,
-        meh = 2,
-        bad = 3,
-        awful = 4
+        zadowolony = 0,
+        dobry = 1,
+        średni = 2,
+        zły = 3,
+        okropny = 4
     }
 }
