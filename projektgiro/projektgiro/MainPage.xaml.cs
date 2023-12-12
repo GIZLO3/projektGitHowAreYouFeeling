@@ -15,23 +15,28 @@ namespace projektgiro
         {
             new ImageButton
             {
-                 Source = "good.png"
+                 Source = "good.png",
+                 Padding = 2,
             },
             new ImageButton
             {
-                Source = "mid.png"
+                Source = "mid.png",
+                Padding = 2
             },
             new ImageButton
             {
-                Source = "meh.png"
+                Source = "meh.png",
+                Padding = 2
             },
             new ImageButton
             {
-                Source = "sad.png"
+                Source = "sad.png",
+                Padding = 2
             },
             new ImageButton
             {
-                Source = "bad.png"
+                Source = "bad.png",
+                Padding = 2
             }
         };
 
@@ -82,7 +87,7 @@ namespace projektgiro
             {
                 if (i == buttonId)
                 {
-                    moodButtons[i].BackgroundColor = Color.Red;
+                    moodButtons[i].BackgroundColor = Color.LightGray;
                 }
 
                 moodButtons[i].IsEnabled = false;
