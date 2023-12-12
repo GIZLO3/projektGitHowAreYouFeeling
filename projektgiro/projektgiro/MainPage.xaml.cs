@@ -11,13 +11,28 @@ namespace projektgiro
 {
     public partial class MainPage : ContentPage
     {
-        private static List<Button> moodButtons = new List<Button>()
+        private static List<ImageButton> moodButtons = new List<ImageButton>()
         {
-            new Button(),
-            new Button(),
-            new Button(),
-            new Button(),
-            new Button()
+            new ImageButton
+            {
+                 Source = "good.png",
+            },
+            new ImageButton
+            {
+                Source = "mid.png"
+            },
+            new ImageButton
+            {
+                Source = "meh.png"
+            },
+            new ImageButton
+            {
+                Source = "sad.png"
+            },
+            new ImageButton
+            {
+                Source = "bad.png"
+            }
         };
 
         public MainPage()
@@ -26,7 +41,7 @@ namespace projektgiro
 
             for (int i = 0; i < moodButtons.Count; i++)
             {
-                moodButtons[i].Text = Enum.GetName(typeof(MoodEnum), i);
+                //moodButtons[i].Text = Enum.GetName(typeof(MoodEnum), i);
                 buttonsGrid.Children.Add(moodButtons[i]);
                 Grid.SetColumn(moodButtons[i], i);
                 moodButtons[i].Clicked += MoodButtonClicked;
