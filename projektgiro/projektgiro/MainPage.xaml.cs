@@ -11,13 +11,33 @@ namespace projektgiro
 {
     public partial class MainPage : ContentPage
     {
-        private static List<Button> moodButtons = new List<Button>()
+        private static List<ImageButton> moodButtons = new List<ImageButton>()
         {
-            new Button(),
-            new Button(),
-            new Button(),
-            new Button(),
-            new Button()
+            new ImageButton
+            {
+                 Source = "good.png",
+                 Padding = 2,
+            },
+            new ImageButton
+            {
+                Source = "mid.png",
+                Padding = 2
+            },
+            new ImageButton
+            {
+                Source = "meh.png",
+                Padding = 2
+            },
+            new ImageButton
+            {
+                Source = "sad.png",
+                Padding = 2
+            },
+            new ImageButton
+            {
+                Source = "bad.png",
+                Padding = 2
+            }
         };
 
         public MainPage()
@@ -26,7 +46,7 @@ namespace projektgiro
 
             for (int i = 0; i < moodButtons.Count; i++)
             {
-                moodButtons[i].Text = Enum.GetName(typeof(MoodEnum), i);
+                //moodButtons[i].Text = Enum.GetName(typeof(MoodEnum), i);
                 buttonsGrid.Children.Add(moodButtons[i]);
                 Grid.SetColumn(moodButtons[i], i);
                 moodButtons[i].Clicked += MoodButtonClicked;
@@ -48,7 +68,7 @@ namespace projektgiro
         {
             if (datePicker.Date <= DateTime.Now)
             {
-                var column = Grid.GetColumn((Button)sender);
+                var column = Grid.GetColumn((ImageButton)sender);
                 var dayMood = new DayMood();
                 dayMood.Mood = (MoodEnum)Enum.Parse(typeof(MoodEnum), column.ToString());
                 dayMood.Date = datePicker.Date;
@@ -67,7 +87,7 @@ namespace projektgiro
             {
                 if (i == buttonId)
                 {
-                    moodButtons[i].BackgroundColor = Color.Red;
+                    moodButtons[i].BackgroundColor = Color.LightGray;
                 }
 
                 moodButtons[i].IsEnabled = false;
