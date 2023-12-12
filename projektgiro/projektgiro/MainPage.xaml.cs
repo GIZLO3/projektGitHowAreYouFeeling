@@ -15,7 +15,7 @@ namespace projektgiro
         {
             new ImageButton
             {
-                 Source = "good.png",
+                 Source = "good.png"
             },
             new ImageButton
             {
@@ -63,7 +63,7 @@ namespace projektgiro
         {
             if (datePicker.Date <= DateTime.Now)
             {
-                var column = Grid.GetColumn((Button)sender);
+                var column = Grid.GetColumn((ImageButton)sender);
                 var dayMood = new DayMood();
                 dayMood.Mood = (MoodEnum)Enum.Parse(typeof(MoodEnum), column.ToString());
                 dayMood.Date = datePicker.Date;
